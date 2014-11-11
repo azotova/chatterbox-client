@@ -101,8 +101,8 @@ $(document).ready(function() {
     e.preventDefault();
     var message = {
       username: window.location.search.slice(window.location.search.indexOf('username') + 9),
-      text: $('input[name="message"]').val(),
-      roomname: $('input[name="room"]').val()
+      text: $('input[name="text"]').val(),
+      roomname: $('input[name="roomname"]').val()
     };
     console.log(message);
     app.send(message);
